@@ -1,0 +1,229 @@
+<!-- 
+Requirements
+[  ] Customized Slideshow
+[yes  ] Visibility Animation (Lesson 17.1)
+[  ] Numeric Animation (Lesson 17.2)
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Upload a Font to Your Replit 
+[ no ] Feature 2 - Use a Google Font  
+[ no ] Feature 3 - Include .on(“click”) feature 
+[ no ] Feature 4 - :hover feature 
+[ no ] Feature 5 - Separate Code Into Three Files .html, .css, .js 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Interactive Slideshow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        <style>
+            body{
+               
+                background-image: url('https://t3.ftcdn.net/jpg/00/06/02/56/360_F_6025657_doOVpFpcJJ0N8T2SlQRFyykN0NTstUSN.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              
+
+            }
+            .slide{
+                border: 12px solid black;
+                
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                height: 500px;
+                width: 800px;
+                background-color: white;
+                  border-radius: 8px;
+            }
+
+            .slide-text{
+                background-color: rgba(240,248,255,0.8);
+                width: 80%;
+                text-align: center;
+                border-radius: 20px;
+                font-family: "Limelight", sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+            }
+
+            h1{
+                text-align: center;
+                width: 100%;
+                font-family: "Limelight", sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+            }
+
+            button:hover{
+                   background: white;
+                    color: black;
+            }
+
+            button{
+              width:140px;
+              height:50px;
+              border-width:1px;
+              color: white;
+              border-color: white;
+              font-weight:bold;
+              border-radius: 8px;
+              box-shadow: white;
+              text-shadow: black;
+              background:black;
+                font-size: 30px;
+            }
+
+            .buttons{
+                display:flex;
+                justify-content: center;
+                margin-top: 5px;
+            }
+
+            .frame{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 flex-direction: column;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+    <h1>Presenting...</h1>
+    <br>
+        <div class="frame">
+        <div class="slide">
+            <img src="moviedisclaimer.png" width="800px" height="500px" alt="disclaimer">
+           
+        </div>
+
+        <div class="buttons">
+            <button type="button"> ▶ </button>
+        </div>
+        </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+    var numClick = 0;
+    $("button").on("click",function(){
+        numClick++;
+        if(numClick == 1){
+            $("img").attr("src","megamind1.gif");
+            
+        }
+        else if(numClick == 2){
+            $("img").attr("src","megamind2.gif");
+           
+        }
+        else if(numClick == 3){
+            $("img").attr("src","megamind3.gif");
+           
+        }
+
+            else if(numClick == 4){
+            $("img").attr("src","megamind4.gif");
+            }
+                else if(numClick == 5){
+                $("img").attr("src","megamind5.gif");
+                }
+                else if(numClick == 6){
+                $("img").attr("src","megamind5.gif");
+                }
+                    else if(numClick == 7){
+                    $("img").attr("src","megamind6.gif");
+                    }
+
+                        else if(numClick == 8){
+                        $("img").attr("src","megamind9.gif");
+                        }
+
+
+                            else if(numClick == 9){
+                            $("img").attr("src","megamind10.gif");
+                            }
+
+                                else if(numClick == 10){
+                                $("img").attr("src","megamind11.gif");
+                                }
+
+
+                                    else if(numClick == 11){
+                                    $("img").attr("src","megamindalt.gif");
+                                    }
+
+                                        else if(numClick == 12){
+                                        $("img").attr("src","megamind12.gif");
+                                        }
+
+
+                                            else if(numClick == 13){
+                                            $("img").attr("src","megamind13.gif"); }
+
+                                                else if(numClick == 14){
+                                                $("img").attr("src","megamind14.gif");
+                                            }
+
+                                                    else if(numClick == 15){
+                                                        $("img").attr("src","megamind15.gif");
+                                                    }
+
+                                                        else if(numClick == 16){
+                                                            $("img").attr("src","megamind16.gif");
+                                                        }
+                                                            else if(numClick == 17){
+                                                                $("img").attr("src","megamind17.gif");
+                                                            }
+
+                                                                else if(numClick == 18){
+                                                                    $("img").attr("src","megamind18.gif");
+                                                                }
+
+                                                                    else if(numClick == 19){
+                                                                        $("img").attr("src","megamind19.gif");
+                                                                    }
+
+                                                                        else if(numClick == 20){
+                                                                            $("img").attr("src","megamind20.gif");
+                                                                        }
+
+                                                                            else if(numClick == 21){
+                                                                                $("img").attr("src","megamind21.gif");
+                                                                            }
+
+                                                                                else if(numClick == 22){
+                                                                                    $("img").attr("src","megamindend.gif");
+                                                                                }
+
+                                                                                
+                
+        else{
+            $("img").attr("src","moviedisclaimer.png");
+            $("h3").text("Logo #1");
+            numClick = 0;
+        }
+
+       
+        
+    })
+
+            $("img").hide();
+            $("img").fadeIn(3000);
+
+        $("h1").animate({
+            fontSize: "50px"
+            
+        });
+
+
+        
+    </script> 
+    
+    </body>
+</html>
